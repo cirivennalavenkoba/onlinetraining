@@ -1,0 +1,154 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Index</title>
+    <style>
+      *{
+    margin :0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  url(./images/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    text-align: center;
+    color:#fff;
+}
+.content h1{
+    font-size: 70px auto;
+    margin-top: 80px;
+
+}
+
+.content p{
+    margin : 20px auto;
+    font-weight: 100px;
+    line-height:25px;
+}
+button{
+    widows: 200px;
+    padding:15px;
+    text-align:center;
+    margin:20px 10px;
+    border-radius:25px;
+    font-weight:bold;
+    border:2px solid #009688;
+    color:black;
+    background: transparent;
+    cursor:pointer;
+    position:relative;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+span{
+    background-color: #009688;
+    height:100%;
+    width:100%;
+    border-radius: 25px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    transition: 0.5s;
+}
+
+botton:hover span{
+    width:100%;
+    background-color: lightcoral;
+}
+
+botton:hover{
+    border:none;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    align-content: center;
+    border: 3px solid lightcoral;
+    border-radius: 20px;
+    height: 200px;
+    width: 250px;
+  }
+    </style>
+
+</head>
+<body>
+    <div class="bg">
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <img src="./images/nirmaan3.png" alt="Logo" style="width:100px; height: 30px;">
+        </a>
+      
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+      
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              courses
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="wma.html">WmA</a>
+              <a class="dropdown-item" href="Net.html">.net</a>
+              <a class="dropdown-item" href="tally.html">tally ERP9</a>
+              <a class="dropdown-item" href="java.html">java</a>
+              <a class="dropdown-item" href="ms-office.html">ms-office</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="missionandvision.html">Mission & Vission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-link">
+            <a href="help.html">Help Line</a>
+          </li>
+        </ul>
+      </nav>
+      <br>
+      <a href="#">
+      <img src="./images/nirmaan2.png" href alt="no img" class="center">
+    </a>
+      <br><br><br><br>
+      <div class="content">
+        <h1>Nirmaan Organigation courses</h1>
+        <p>Nirmann Organization is best learning  platform for web design</p>
+        <div> 
+            <a href="form.html"><button type="submit" class="btn btn-success">Registration<span></span></button></a>
+
+            <a href="login.html"> <button type="submit" class="btn btn-success"><span></span>Login</button></a>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

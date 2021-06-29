@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java beginners</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    * {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+  }  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color:rgb(184, 114, 28);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 20%;
+    height: 3000px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+    overflow: scroll;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    background-color: #f1f1f1;
+    height: 3000px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: rgb(19, 4, 4);
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  </style>
+</head>
+<body>
+
+<header>
+    <h1>java beginners</h1>
+</header>
+
+<section>
+  <nav>
+    <h2>java concepts </h2>
+    <ul>
+      <li>what is java</li>
+      <li> history of java</li>
+      <li>java variables</li>
+      <li>java data type</li>
+      <li>type casting</li>
+      <li>operaters</li>
+      <li>strings</li>
+      <li>java maths</li>
+      <li>java boleans</li>
+      <li>control statements</li>
+      <li>java iterators</li>
+      <li>java arrays</li>
+      <li>java methods</li>
+      <li>java parameters</li>
+      <li>java functions</li>
+      <li>java overloading</li>
+      <li>java opps</li>
+      <li>handling in java</li>
+      <li>feature of java</li>
+
+    </ul>
+  </nav>
+  
+  <article>
+
+    <h2>what is java : </h2>
+    <p>Java is a class-based object-oriented programming language for building web and desktop applications. It is the most popular programming language and the language of choice for Android programming.
+    </p>
+    <h4>what is java platform : </h4>
+    <div>
+        Java Platform is a collection of programs that help programmers to develop and run Java programming applications efficiently. It includes an execution engine, a compiler, and a set of libraries in it. It is a set of computer software and specifications. James Gosling developed the Java platform at Sun Microsystems, and the Oracle Corporation later acquired it.
+        <h4>history of java programming language :</h4>
+        <p>Here are important landmarks from the history of the Java language:        </p>
+        <ul>
+            <li>The Java language was initially called OAK.            </li>
+            <li>Originally, it was developed for handling portable devices and set-top boxes. Oak was a massive failure.            </li>
+            <li>In 1995, Sun changed the name to "Java" and modified the language to take advantage of the burgeoning www (World Wide Web) development business.            </li>
+            <li>Later, in 2009, Oracle Corporation acquired Sun Microsystems and took ownership of three key Sun software assets: Java, MySQL, and Solaris.            </li>
+          </ul> 
+          <h4> java versions : </h4>
+          <p>Here are a brief history of all the Java versions with its release date.  </p>
+          <table border="2px">
+              <tr>
+                  <td>java versions</td><td>release date</td>
+              </tr>
+              <tr>
+                  <td>JDK Alpha and Beta</td><td>1995</td>
+              </tr>
+              <tr>
+                  <td>JDK 1.0</td><td>23rd Jan 1996</td>
+              </tr>
+              <tr>
+                  <td>JDK 1.1</td><td>19th Feb 1997 </td>
+              </tr>
+              <tr>
+                  <td>J2SE 1.2	</td><td>8th Dec 1998</td>
+              </tr>
+              <tr>
+                  <td>JAVA SE 13</td><td>17th Sep 2019</td>
+              </tr>
+              <tr>
+                  <td>JAVA SE 14</td><td>17th Mar 2020</td>
+              </tr>
+              <tr>
+                  <td>JAVA SE 15</td><td>15th Sep 2020 (latest Java Version)</td>
+              </tr>
+          </table>
+          <h4>java variables :</h4>
+          <h5>What is a Variable in Java?        </h5>
+          <p>Variable in Java is a data container that stores the data values during Java program execution. Every variable is assigned data type which designates the type and quantity of value it can hold. Variable is a memory location name of the data. The Java variables have mainly three types : Local, Instance and Static.        </p>
+          <h6>types of variables</h6>
+          <ol type="1">
+              <li> static Variable </li>
+              <li> instance variable </li>
+              <li>local variable</li>
+          </ol>
+          <h5>static variable : </h5>
+          <p>Local Variables are a variable that are declared inside the body of a method.</p>
+          <h5>instance variable : </h5>
+          <p>Instance variables are defined without the STATIC keyword .They are defined Outside a method declaration. They are Object specific and are known as instance variables.        </p>
+          <h5>local variable : </h5>
+          <p>Static variables are initialized only once, at the start of the program execution. These variables should be initialized first, before the initialization of any instance variables.        </p>
+          <h6>example of variables :</h6>
+          <p>class Nirmaan {
+            static int a = 1; //static variable  
+            int data = 99; //instance variable  
+            void method() {
+                int b = 90; //local variable  
+            }
+        }
+        </p>
+        <h4>data types in java : </h4>
+        <p>Data Types in Java are defined as specifiers that allocate different sizes and types of values that can be stored in the variable or an identifier. Java has a rich set of data types. Data types in Java can be divided into two parts :        </p>
+        <h5>two types of data type : </h5>
+        <ol type="1">
+            <li>primitive data type</li>
+            <li>non-primitive data type</li>
+        </ol>
+
+        <h4> primitive data type : </h4>
+        <p>which include integer, character, boolean, and float</p>
+        <p>Primitive Data Types are predefined and available within the Java language. Primitive values do not share state with other primitive values.        </p>
+
+        <p>There are 8 primitive types: byte, short, int, long, char, float, double, and boolean Integer data type
+        </p>
+        <h4>non-promitive data type : </h4>
+        <p>which include classes, arrays and interfaces.</p>
+        <h3>what is class in java ?</h3>
+        <p>Class are a blueprint or a set of instructions to build a specific type of object. It is a basic concept of Object-Oriented Programming which revolve around the real-life entities. Class in Java determines how an object will behave and what the object will contain.</p>
+        <h6>Syntax : </h6>
+        <p>class <class_name>{  
+            field;  
+            method;  
+          } </p>
+          <h3>what is an object in java : </h3>
+          <p>Object is an instance of a class. An object in OOPS is nothing but a self-contained component which consists of methods and properties to make a particular type of data useful. For example color name, table, bag, barking. When you send a message to an object, you are asking the object to invoke or execute one of its methods as defined in the class.        </p>
+          <p>From a programming point of view, an object in OOPS can include a data structure, a variable, or a function. It has a memory location allocated. Java Objects are designed as class hierarchies.        </p>
+          <h6>Syntax : </h6>
+          <p>ClassName ReferenceVariable = new ClassName();        </p>
+          <h3>what is Arrays in java </h3>
+          <p>Java Array is a very common type of data structure which contains all the data values of the same data type. The data items put in the array are called elements and the first element in the array starts with index zero. Arrays inherit the object class and implement the serializable and cloneable interfaces. We can store primitive values or objects in an array.        </p>
+          <h6>how to initialize in arrays </h6>
+          <p>x[0]=0;
+            x[1]=1;
+            x[2]=2;
+            x[3]=3;
+            x[4]=4;
+            x[5]=5;
+            </p>
+            <h3>Strings in java : </h3>
+            <p>A string in literal terms is a series of characters. Hey, did you say characters, isn’t it a primitive data type in Java. Yes, so in technical terms, the basic Java String is basically an array of characters.            </p>
+            <h5>why use Strings</h5>
+            <p>One of the primary functions of modern computer science, is processing human language.<br><br>
+                Similarly to how numbers are important to math, language symbols are important to meaning and decision making. Although it may not be visible to computer users, computers process language in the background as precisely and accurately as a calculator. Help dialogs provide instructions. Menus provide choices. And data displays show statuses, errors, and real-time changes to the language.
+
+            </p>
+            <h5>syntax of strings : </h5>
+            <p>//String is an array of characters<br>
+                char[] arrSample = {'R', 'O', 'S', 'E'};<br>
+                String strSample_1 = new String (arrSample);
+                </p>
+            <p></p>
+
+
+    </div>
+  </article>
+</section>
+<footer>
+    <h3>java tutorials </h3>
+    <P>This tutorials is very useful to students</P>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+          <ul>
+            <h5>tutorials :</h5>
+            <li><a href="#">WMA</a></li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">ms-office</a></li>
+            <li><a href="#">.Net</a></li>
+          </ul>
+        </div>
+          <div class="col" >
+            <h5>links : </h5>
+            <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">courses</a></li>
+              <li><a href="#">missionandvision</a></li>
+              <li><a href="#">AboutUs</a></li>
+    
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>share : </h5>
+            <ul> 
+              <li class="social-items"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="social-items"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+              <li class="social-items"><a href="#"><i class="fab fa-telegram"></i></a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+</body>
+</html>
